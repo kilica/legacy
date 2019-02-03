@@ -333,7 +333,7 @@ class Legacy_Controller extends XCube_Controller
 
         require_once XOOPS_LEGACY_PATH.'/kernel/object.php';                // ToDo (here?)
         require_once XOOPS_LEGACY_PATH.'/kernel/handler.php';                // ToDo
-        require_once XOOPS_ROOT_PATH.'/core/XCube_Utils.class.php'; // ToDo
+        require_once XOOPS_TRUST_PATH. '/core/XCube_Utils.class.php'; // ToDo
 
         require_once XOOPS_ROOT_PATH.'/class/xoopssecurity.php';
         $GLOBALS['xoopsSecurity'] = new XoopsSecurity();

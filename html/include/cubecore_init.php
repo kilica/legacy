@@ -30,9 +30,9 @@ define('XOOPS_CUBE_LEGACY', true);
  */
 define('LEGACY_BASE_VERSION', '2.2.3.0');
 
-require_once XOOPS_ROOT_PATH . "/core/XCube_Root.class.php";
-require_once XOOPS_ROOT_PATH . "/core/XCube_Controller.class.php";
-require_once XOOPS_ROOT_PATH . "/core/libs/IniHandler.class.php";
+require_once XOOPS_TRUST_PATH. "/core/XCube_Root.class.php";
+require_once XOOPS_TRUST_PATH. "/core/XCube_Controller.class.php";
+require_once XOOPS_TRUST_PATH. "/core/libs/IniHandler.class.php";
 
 //
 // TODO We have to move the following lines to an appropriate place.
