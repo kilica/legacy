@@ -32,8 +32,8 @@
 if (!defined('XOOPS_ROOT_PATH')) {
     exit();
 }
-require_once XOOPS_ROOT_PATH.'/kernel/user.php';
-require_once XOOPS_ROOT_PATH.'/kernel/group.php';
+require_once XOOPS_TRUST_PATH.'/kernel/user.php';
+require_once XOOPS_TRUST_PATH.'/kernel/group.php';
 
 /**
 * XOOPS member handler class.

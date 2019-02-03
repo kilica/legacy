@@ -1,6 +1,6 @@
 <?php
 // $Id: xoopsobject.php,v 1.1 2007/05/15 02:34:21 minahito Exp $
-if (!defined('XOOPS_ROOT_PATH')) {
+if (!defined('XOOPS_TRUST_PATH')) {
     exit();
 }
 /**
@@ -10,4 +10,4 @@ if (!defined('XOOPS_ROOT_PATH')) {
 /**
  * Load the new object class 
  **/
-require_once XOOPS_ROOT_PATH.'/kernel/object.php';
+require_once XOOPS_TRUST_PATH.'/kernel/object.php';

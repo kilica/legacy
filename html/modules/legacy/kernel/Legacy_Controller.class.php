@@ -326,14 +326,14 @@ class Legacy_Controller extends XCube_Controller
 
         require_once XOOPS_ROOT_PATH.'/include/functions.php';
 
-        require_once XOOPS_ROOT_PATH.'/kernel/object.php';
+        require_once XOOPS_TRUST_PATH.'/kernel/object.php';
         require_once XOOPS_ROOT_PATH.'/class/criteria.php';
         require_once XOOPS_ROOT_PATH.'/class/token.php';
         require_once XOOPS_ROOT_PATH.'/class/module.textsanitizer.php';
 
         require_once XOOPS_LEGACY_PATH.'/kernel/object.php';                // ToDo (here?)
         require_once XOOPS_LEGACY_PATH.'/kernel/handler.php';                // ToDo
-        require_once XOOPS_ROOT_PATH.'/core/XCube_Utils.class.php'; // ToDo
+        require_once XOOPS_TRUST_PATH. '/core/XCube_Utils.class.php'; // ToDo
 
         require_once XOOPS_ROOT_PATH.'/class/xoopssecurity.php';
         $GLOBALS['xoopsSecurity'] = new XoopsSecurity();
@@ -1395,7 +1395,7 @@ class Legacy_AbstractControllerStrategy
         // Auto pre-loading.
         //
         if ($this->mController->mRoot->getSiteConfig('Legacy', 'AutoPreload') == 1) {
-            $this->mController->_processPreload(XOOPS_ROOT_PATH . '/preload');
+            $this->mController->_processPreload(XOOPS_TRUST_PATH . '/preload');
         }
     }
 

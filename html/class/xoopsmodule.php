@@ -10,4 +10,4 @@ if (!defined('XOOPS_ROOT_PATH')) {
 /**
  * load the new module class 
  **/
-require_once XOOPS_ROOT_PATH.'/kernel/module.php';
+require_once XOOPS_TRUST_PATH.'/kernel/module.php';

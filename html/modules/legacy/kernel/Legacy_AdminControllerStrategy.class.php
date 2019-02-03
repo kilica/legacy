@@ -67,7 +67,7 @@ class Legacy_AdminControllerStrategy extends Legacy_AbstractControllerStrategy
         // Auto pre-loading.
         //
         if ($this->mController->mRoot->getSiteConfig('Legacy', 'AutoPreload') == 1) {
-            $this->mController->_processPreload(XOOPS_ROOT_PATH . "/preload/admin");
+            $this->mController->_processPreload(XOOPS_TRUST_PATH . "/preload/admin");
         }
     }
     
