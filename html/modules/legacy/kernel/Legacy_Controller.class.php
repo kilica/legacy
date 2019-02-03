@@ -326,7 +326,7 @@ class Legacy_Controller extends XCube_Controller
 
         require_once XOOPS_ROOT_PATH.'/include/functions.php';
 
-        require_once XOOPS_ROOT_PATH.'/kernel/object.php';
+        require_once XOOPS_TRUST_PATH.'/kernel/object.php';
         require_once XOOPS_ROOT_PATH.'/class/criteria.php';
         require_once XOOPS_ROOT_PATH.'/class/token.php';
         require_once XOOPS_ROOT_PATH.'/class/module.textsanitizer.php';
