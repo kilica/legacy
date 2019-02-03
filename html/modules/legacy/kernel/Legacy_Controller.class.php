@@ -1395,7 +1395,7 @@ class Legacy_AbstractControllerStrategy
         // Auto pre-loading.
         //
         if ($this->mController->mRoot->getSiteConfig('Legacy', 'AutoPreload') == 1) {
-            $this->mController->_processPreload(XOOPS_ROOT_PATH . '/preload');
+            $this->mController->_processPreload(XOOPS_TRUST_PATH . '/preload');
         }
     }
 

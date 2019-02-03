@@ -26,7 +26,7 @@ class SetupAltsysLangMgr extends XCube_ActionFilter
 }
 
 
-require_once XOOPS_ROOT_PATH . "/core/XCube_LanguageManager.class.php";
+require_once XOOPS_TRUST_PATH. "/core/XCube_LanguageManager.class.php";
 require_once XOOPS_ROOT_PATH . "/modules/legacy/kernel/Legacy_LanguageManager.class.php";
 
 class AltsysLangMgr_LanguageManager extends Legacy_LanguageManager

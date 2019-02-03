@@ -44,7 +44,7 @@ switch (checkMainfile()) {
 
 /*** check table field expand by preload ***/
 if (! checkTable()) {
-    $messages[] = 'You must put extras/extra_preload/upgrade22.class.php in '.XOOPS_ROOT_PATH.'/preload';
+    $messages[] = 'You must put extras/extra_preload/upgrade22.class.php in '.XOOPS_TRUST_PATH.'/preload';
 }
 
 
@@ -86,7 +86,7 @@ foreach ($modules as $mod) {
 if (count($messages)===0) {
     $messages[] = 'Congraturation! You are ready for upgrade XCL2.2.<br />Remove '.XOOPS_ROOT_PATH.'/legacy22_check.php file.';
     if (! checkPreload()) {
-        $messages[] = 'You should remove upgrade22.class.php from '.XOOPS_ROOT_PATH.'/preload';
+        $messages[] = 'You should remove upgrade22.class.php from '.XOOPS_TRUST_PATH.'/preload';
     }
 }
 
@@ -121,7 +121,7 @@ function checkLanguage($lang)
 
 function checkPreload()
 {
-    return file_exists(XOOPS_ROOT_PATH. '/preload/upgrade22.class.php') ? false : true;
+    return file_exists(XOOPS_TRUST_PATH. '/preload/upgrade22.class.php') ? false : true;
 }
 
 function checkDirectory()
